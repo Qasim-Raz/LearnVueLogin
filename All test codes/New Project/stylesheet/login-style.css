@@ -1,0 +1,37 @@
+.login-heading{
+    color: rgb(46, 67, 255);
+    text-align: right;
+}
+.hback-hground{
+    background-color: rgb(38, 30, 54);
+    
+}
+.form-group{
+    color: rgb(85, 144, 255);
+}
+.log-pg-hbtn >a{
+    color: rgb(115, 101, 241);
+
+}
+.log-pg-hbtn{
+    color: white;
+    text-align: center;
+}
+.row{
+    max-width: 40%;
+}
+.text-foot-bottom{
+    color: rgb(93, 144, 255);
+    text-align: left;
+    font-size: 75%;
+}
+.submit-holder{
+    text-align: right;    
+}
+.submit-holder >button{
+    border-radius: 50px;
+    border: 0;
+    color: white;
+    background-color: rgba(79, 140, 255, 0.466);
+    font-size: 16px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Js Assignment</h1>
+
+    <!-- //********Question No 1********// -->
+    <h2>Question No 1.</h2>
+
+    <P>Write a program which should dispaly first 50 even numbers</P>
+    <button onclick="firEvenNum()">Click here!</button>
+    <div id="evenNum"></div>
+
+    <!-- //********Question No 2********// -->
+    <h2>Questioin No 2.</h2>
+
+    <p>Program to count Vowels in the strings and return vowels in reverse order if vowels are
+        more than 3 and are the 2 among 5 vowels in sequence.</p>
+    <div>
+        <input type="text" placeholder="Enter your string" id="Q_2userInput">
+        <button onclick="countVowels()"> Click here!</button>
+    </div>
+    <p id="resultOFQ-2"></p>
+    <p id="countOFQ-2"></p>
+
+    <!-- //********Question No 3********// -->
+
+    <h2>Questioin No 3.</h2>
+
+    <p>Function to add two vowels in arrays and generate third array and store vowels only once if
+        repeated. Third array should stored the sorted vowels</p>
+    <div>
+        <input type="text" placeholder="Enter your 1st array" id="firstArrayQ-3">
+        <input type="text" placeholder="Enter your 2nd array" id="SecArrayQ-3">
+        <button onclick="addVowelsQ_3()"> Click here!</button>
+    </div>
+    <p id="resultOFQ-3"></p>
+
+    <!-- //********Question No 4********// -->
+
+    <h2>Questioin No 4.</h2>
+
+    <p>Program to return third and last largest number in array if first largest number is greater than second
+        largest by 20%.</p>
+    <div>
+        <input type="text" placeholder="Enter some numbers only with coma-separated" id="userNumbersQ-4">
+        <button onclick="largestNumberQ_4()"> Click here!</button>
+    </div>
+    <p id="resultOFQ-4"></p>
+
+    <!-- //********Question No 5********// -->
+
+    <h2>Questioin No 5.</h2>
+
+    <p>A string and non-negative int a, return larger string that is n copies of original string if copies
+        are palindrome otherwise reverse the string and then generate n-copies.</p>
+    <div>
+        <input type="text" placeholder="Enter your string" id="userStringQ-5">
+        <button onclick="larger_genCopies()"> Click here!</button>
+    </div>
+    <p id="resultOFQ-5"></p>
+
+    <!-- //********Question No 6********// -->
+
+    <h2>Questioin No 6.</h2>
+
+    <p>2 arrays of ints,a and b, return True if they have same first element or last element. Both arrays will be length
+        1 or more. If count of such matches is more than total number of array elements then copies the element of first
+        array into second and second into first.</p>
+    <div>
+        <input type="text" placeholder="Enter your first numbers only" id="firstNumbersQ-6">
+        <input type="text" placeholder="Enter your second numbers only" id="secondNumbersQ-6">
+        <button onclick="match_duplicate()"> Click here!</button>
+    </div>
+    <p id="FirstResultOFQ-6"></p>
+    <p id="SecondResultOFQ-6"></p>
+    <p id="ThirdResultOFQ-6"></p>
+
+    <!-- //********Question No 7********// -->
+
+    <h2>Questioin No 7.</h2>
+
+    <p>3 int values,a b c, return their sum. if one of values is the same as another of values, it does not count
+        towards the sum. If number of such values exceed by half the total number of value in array then decrease
+        each value by minimum value and store the values in DESC order in another array.</p>
+    <div>
+        <input type="number" placeholder="Enter your first number only" id="firstNumbersQ-7">
+        <input type="number" placeholder="Enter your second number only" id="secondNumbersQ-7">
+        <input type="number" placeholder="Enter your third number only" id="thirdNumbersQ-7">
+        <button onclick="addition_Q7()"> Click here!</button>
+    </div>
+    <p id="FirstResultOFQ-7"></p>
+    <p id="SecondResultOFQ-7"></p>
+
+    <!-- //********Question No 8********// -->
+
+    <h2>Questioin No 8.</h2>
+
+    <p>A function Word (sen), return the largest word in string. If there are two or more words that are same length,
+        return the first word from the string. The program should check vowels in the palindrome in the sentence and
+        if there are at least 2-palindromes with at least 3 vowels then store the palindrome in reverse order out of
+        sentence</p>
+    <div>
+        <input type="text" placeholder="Enter your string" id="stringOFQ-8">
+        <button onclick="findLongestWord()"> Click here!</button>
+    </div>
+    <p id="FirstResultOFQ-8"></p>
+    <p id="SecondResultOFQ-8"></p>
+    <p id="ThirdResultOFQ-8"></p>
+    <p id="FourthResultOFQ-8"></p>
+
+    <!-- //********Question No 9********// -->
+
+    <h2>Questioin No 9.</h2>
+
+    <p>A function Alphabet (str) return the string with the letters in alphabetical order (ie. hello becomes ehllo).
+    </p>
+    <div>
+        <input type="text" placeholder="Enter your string" id="userStringQ-9">
+        <button onclick="sortAlphabetically()"> Click here!</button>
+    </div>
+    <p id="resultOFQ-9"></p>
+
+
+    <script src="question-1.js"></script>
+    <script src="question-2.js"></script>
+    <script src="question-3.js"></script>
+    <script src="question-4.js"></script>
+    <script src="question-5.js"></script>
+    <script src="question-6.js"></script>
+    <script src="question-7.js"></script>
+    <script src="question-8.js"></script>
+    <script src="question-9.js"></script>
+</body>
+
+</html>

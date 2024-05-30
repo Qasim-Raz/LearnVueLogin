@@ -1,0 +1,206 @@
+.background{
+    position: relative;
+    background-color: rgb(38, 30, 54);
+    height: 650px;
+    z-index: 10;
+}
+
+.cloudpic{
+    position: absolute;
+    background-image: url(../slidepics/cloud-bg.svg);
+    height: 100%;
+    width:100%;
+    background-size: 100%;
+    opacity: 0.5;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.btn-client-area{
+    border-radius: 20px;
+    background-color: #333c4e;
+    padding: 2px 18px!important;
+}
+#top-content{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    height: 700px ;
+    
+}
+#cont{
+    height: 700px;
+}
+.top-heading{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    width: 600px;
+    text-align: left;
+    line-height: 1;
+}
+.bold{
+    font-weight: bold;
+}
+.mid-heading{
+    text-align: left;
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+.slide-4-text{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 50px;
+}
+.input-domain{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+}
+.input-items-btn{
+right: 10px;
+}
+.domain-input{
+    font-size: 22px;
+    font-weight: 300;
+    height: inherit;
+    padding: 13px 32px;
+}
+.btn_yellow{
+    font-size: 18px!important;
+    font-weight: 600!important;
+    border-radius: 50px!important;
+    background-color: yellow;
+    color: black;
+}
+.feature-heading{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.text{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.feature-info{
+    max-width: 370px;
+    
+}
+.feature-btn{
+    border-radius: 10px;
+    background-color: rgb(29, 29, 54);
+    color: white;
+    margin-top: 10px;   
+    
+}
+.feature-btn:hover{
+    background-color: yellow;
+    text-decoration: none;
+}
+.feature-background{
+    background-color: rgb(245, 225, 225);
+}
+.card-title{
+    text-align: center;
+    font-size: 23px;
+    
+}
+.row-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;  
+}
+.card-img-top{
+   height: 50px;
+   width: 50px;
+}
+.card-title:hover{
+    color: blue;
+    font-weight: bold;
+}
+.bottom-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bottom-price{
+    font-weight: bold;
+    color: rgb(53, 85, 145);
+}
+.card-btn{
+width: 50%;
+margin: auto;
+text-align: center;
+    background-color: rgb(12, 123, 226);
+    border-radius: 20px;
+}
+.card-btn-btn{
+    color: white!important;
+    text-decoration: none!important;
+    font-weight: bold!important;
+}
+.c-botton{
+font-size: 20px;
+font-weight: bold;
+padding: 0;
+margin: 0;
+color: rgb(25, 87, 255);
+
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-box{
+    background-color: rgb(21, 0, 49);
+    color: rgb(54, 62, 87);
+    position: relative;
+}
+.li-list{
+    line-height: 40px;
+    font-size: 18px;
+}
+.fab{
+    font-size: 20px;
+    color: rgb(54, 62, 87);
+}
+.sub-footer{
+    border-top: 2px solid;
+    color: rgb(54, 62, 87);
+}
+.sub-footer-menu{
+    display: inline;
+    margin-right: 20px;
+}
+.sub-footer-menu a{
+    color: rgb(54, 62, 87);
+}
+.sub-footer-sub{
+    padding-top: 10px;
+}
+.copyright{
+    text-align: right;
+    color: rgb(54, 62, 87);
+}
+.hosting-service{
+ text-align: center;
+}
+.card-body-text:hover{
+    
+    border-color: blue;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.fas{
+    color: yellow;
+    padding-right: 8px;
+}
+.li-list >ul >li:hover{
+    color: white;
+    text-decoration: underline;
+}
+.li-list >ul >a >i:hover{
+    color: white;
+}

@@ -1,0 +1,34 @@
+
+.avatar:hover {
+  /* height: 200px;
+  width: 200px; */
+  transform: scale(5);
+  opacity: 0.8;
+}
+#singleUserData{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  line-height: 30px;
+  padding: 10px;
+}
+.singleUserPic{
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  object-fit:cover;
+ margin-bottom: 20px;
+ margin-top: 10px;
+}
+.paraInline{
+  display: inline;
+  font-weight: bold;
+  margin: 20px;
+  padding: 30px;
+}
+#uName{
+  font-size: large;
+  font-weight: bold;
+}

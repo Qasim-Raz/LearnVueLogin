@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(116, 101, 110) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 50vh !important;
+}
+form{
+    margin: 2rem 0 0 0;
+}
+form select{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+form input{
+    /* width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem; */
+    height: 1.75rem;
+    /* font-size: 1rem;
+    padding-left: 1rem;
+    border: 1px solid lightgray; */
+}
+.dropdowns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.dropdown select{
+    font-size: 1rem;
+    width: 100%;
+    height: 2rem;
+}
+.dropdown{
+    display: flex;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+p{
+    margin-bottom: 1rem;
+}
+.phoneN0 p{
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+.phoneN0 input{
+    margin-top: 0.5rem;
+}
+.phoneN0{
+    display: flex;
+    margin-top: 2rem;
+    background-color: bisque;
+}
+#makeSelect:disabled{
+    cursor: not-allowed;
+}
+#modelSelect:disabled{
+    cursor: not-allowed;
+}
+#styleSelect:disabled{
+    cursor: not-allowed;
+}
+.btn input{
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 0.75rem;
+    padding: 0 !important;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.small-popup {
+    font-size: 10px; /* Adjust font size for smaller text */
+    padding: 0; /* Reduce padding around content */
+    border-radius: 5px; /* Reduce border radius for a more compact look */
+    background-color: red;
+    color: white;
+    width: auto;
+    margin-top: 1rem;
+}
+.small-popup button {
+    /* display: none; */
+    visibility: collapse;
+}

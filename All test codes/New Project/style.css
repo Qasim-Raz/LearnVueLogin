@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    color: white;
+    background-color: rgba(12, 2, 68, 0.87);
+}
+h2 {
+    text-decoration: underline;
+}
+#userNumbersQ-4{
+    width: 35%;
+}
+#firstNumbersQ-6{
+    width: 30%;
+}
+#secondNumbersQ-6{
+    width: 30%;
+}

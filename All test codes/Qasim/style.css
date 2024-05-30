@@ -1,0 +1,15 @@
+.themeColor {
+  background: black;
+  color: aliceblue;
+}
+
+p {
+  color: rgb(25, 39, 34)!important;
+}
+
+#myName {
+  color: blue !important;
+}
+h3 {
+  color: aqua;
+}

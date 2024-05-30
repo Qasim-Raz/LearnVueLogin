@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- Download kr k lga lo -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+</head>
+
+<body class="bg-white">
+    <!-- <div class="container-fluid " style="height:  100vh !important">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-10 bg-primary">
+                Kashif Raza
+            </div>
+            <div class="col-md-3 col-sm-6 col-2 bg-info">
+                Hureeyyyy
+            </div>
+            <div class="col-md-3 col-sm-6 col-10 bg-primary">
+                Kashif Raza
+            </div>
+            <div class="col-md-3 col-sm-6 col-2 bg-info">
+                Hureeyyyy
+            </div>
+        </div>
+        <button class="btn btn-dark">Kashif Raza</button>
+        <input type="text" class="form-control" name="" placeholder="Name Here" id="">
+        <div class="row ml-5">
+            <div class="col-6">
+                <table class="table table-striped table-borderless table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>July</td>
+                            <td>Dooley</td>
+                            <td>july@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div> -->
+
+    <div id="singleUserData">
+        <!-- <div>
+            <img class="singleUserPic" src="./4k-Goku-Background.jpg" alt="">
+            <p>name</p>
+
+        </div>
+        <div>
+            <p class="paraInline">Followers</p>
+            <p class="paraInline">Following</p> </br>
+            <p class="paraInline"><a href="#">Companies</a></p>
+            <p class="paraInline">Location</p>
+        </div> -->
+    </div>
+    <div class="col-md-12">
+        <!-- <button type="button" onclick="fetchUserData()">Fetch User Data</button> -->
+    </div>
+
+    <table class="table">
+        <thead>
+            <!-- <tr> -->
+            <th scope="col">Id</th>
+            <th scope="col">
+                Name
+            </th>
+            <th scope="col">Profile Pic</th>
+            <th scope="col">Github Profile</th>
+            <!-- </tr> -->
+        </thead>
+        <tbody id="userTableBody">
+            <!-- populate Data Dynamically -->
+
+
+        </tbody>
+    </table>
+</body>
+<script>
+    async function fetchUserData() {
+        const response = await axios.get('https://api.github.com/users');
+        if (response.status == 200) {
+            // Write my success logic
+            const data = response.data
+            // console.log(data)
+            let htmlBody = ''
+            data.map(user => {
+                // console.log({ htmlBody })
+                htmlBody += `<tr>
+                        <td>${user.id}</td>
+                        <td><a href = "#" onclick = "fetchUserInfo('${user.login}')">${user.login}</a></td>
+                        <td> <img class = "avatar" height="50px" width="50px" src="${user.avatar_url}" alt="${user.login}"> </td>
+                        <td><a href = "${user.html_url}" target = "_blank">${user.html_url}</a></td>
+                    </tr>`
+
+            })
+            // console.log('Final Body', htmlBody)
+
+            document.getElementById('userTableBody').innerHTML = htmlBody;
+
+
+        } else {
+            // Show Error Message
+            alert('Something went Wrong!')
+        }
+    }
+    window.onload = fetchUserData();
+    async function fetchUserInfo(userName) {
+        const response = await axios.get(`https://api.github.com/users/${userName}`);
+        if (response.status == 200) {
+            const user = response.data
+            // console.log(user);
+
+            let singleUserData = document.getElementById("singleUserData")
+            singleUserData.innerHTML = `<div>
+                <img class="singleUserPic" src="${user.avatar_url}" alt="${user.login}">
+                <p id="uName">${user.name}</p>
+                </div>
+                <div>
+                    <p class="paraInline">Followers: ${user.followers}</p>
+                    <p class="paraInline">Follwing: ${user.following}</p> </br>
+                    <p class="paraInline">Company:<a href = "${user.company}"> ${user.company}</a></p>
+                    <div>
+                        <p class="paraInline">Location: ${user.location}</p>
+                        </div>
+                        <div>
+                        <p class="paraInline">Blog:<a href = "${user.blog}" target = "_blank"> ${user.blog}</a></p>
+                        </div>
+                    </div >`;
+
+        }
+    }
+</script>
+
+</html>

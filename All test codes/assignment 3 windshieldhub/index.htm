@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windshield hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h2>Place your order.</h2>
+        <form id="quoteForm" class="form needs-validation" novalidate>
+            <div class="userInput">
+                <p>Enter Your zip code.</p>
+                <input placeholder="Zip-Code" class="form-control" type="text" id="zipCode"> <span id="zipCodeError"
+                    class="text-danger"></span>
+            </div>
+            <div class="dropdowns">
+
+                <div class="dropdown">
+                    <select class="form-select" name="Year" id="yearSelect">
+                        <option value="">Year*</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <select name="Make" id="makeSelect">
+                        <option value="">Make*</option>
+                    </select>
+                </div>
+            </div>
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <select name="Model" id="modelSelect">
+                        <option value="Model*" selected>Model*</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <select name="Style" id="styleSelect">
+                        <option value="style">Style*</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="phoneN0">
+
+                    <p>Get Quote via text!</p>
+                    <input placeholder="Phone Number" class="form-control" type="text" id="mobileNo">
+                </div>
+                <span id="mobilError" class="text-danger"></span>
+            </div>
+            <div class="btn">
+                <input type="submit" id="submitButton" name="button" value="submit">
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="scrip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

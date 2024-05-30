@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <link rel="stylesheet" href="bootstrap.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./stylesheet/login-style.css" />
+</head>
+<title>Hustbe</title>
+</head>
+
+<body class="hback-hground">
+   <div class="container-fluid ">
+      <div class="container d-flex align-items-center justify-content-center">
+         <div class="row ">
+
+            <div class="col-sm-6 pb-4">
+               <a href="./project.html"> <img src="./slidepics/logo.svg" alt="Hustbee" width="120px" /></a>
+            </div>
+            <div class="col-sm-6 login-heading pb-4">
+               <img class="mr-2" src="./slidepics/lock.svg" alt="Client-Area" width="11" height="16" />Client Area</a>
+            </div>
+
+            <div class="col-sm-12 log-pg-hbtn py-4">
+               <a href="./loginarea.html">Login </a> or
+               <a href="./register.html">Rigester</a>
+            </div>
+            <div class="col-sm-12">`
+               <form>
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Username</label>
+                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputPassword1">Password</label>
+                     <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+               </form>
+            </div>
+            <div class="col-sm-6 pt-4">
+               <a class="text-foot-bottom" href="">Forgot your password?</a>
+            </div>
+            <div class="col-sm-6 submit-holder pt-3">
+               <button type="submit" class="btn px-4">Login</button>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script>
+   // let int1 = 0;
+   // let int2 = 41;
+   // let int3 = 40;
+   // let int4 = 46;
+   // let int5 = 40;
+   // // ========================Largest Number===============================
+
+   // if (int1 > int2 && int1 > int3 && int1 > int4 && int1 > int5) {
+   //    console.log("Int1 is the largest number", int1);
+   // }
+   // else if (int2 > int1 && int2 > int3 && int2 > int4 && int2 > int5) {
+   //    console.log("Int2 is the largest number", int2);
+   // }
+   // else if (int3 > int1 && int3 > int2 && int3 > int4 && int3 > int5) {
+   //    console.log("Int3 is the largest number", int3);
+   // }
+   // else if (int4 > int1 && int4 > int2 && int4 > int3 && int4 > int5) {
+   //    console.log("Int4 is the largest number", int4);
+   // }
+   // else {
+   //    console.log("Int5 is the largest number", int5);
+   // }
+   // // ======================================================================
+
+   // // ================Smallest Number======================================
+
+   // if (int1 < int2 && int1 < int3 && int1 < int4 && int1 < int5) {
+   //    console.log("Int1 is the Smallest number", int1);
+   // }
+   // else if (int2 < int1 && int2 < int3 && int2 < int4 && int2 < int5) {
+   //    console.log("Int2 is the Smallest number", int2);
+   // }
+   // else if (int3 < int1 && int3 < int2 && int3 < int4 && int3 < int5) {
+   //    console.log("Int3 is the Smallest number", int3);
+   // }
+   // else if (int4 < int1 && int4 < int2 && int4 < int3 && int4 < int5) {
+   //    console.log("Int4 is the Smallest number", int4);
+   // }
+   // else {
+   //    console.log("Int5 is the Smallest number", int5);
+   // }
+
+   // // ==================================Modulus=====================================
+
+   // const modulusBy = 3;
+   // const remainder = 2;
+
+   // if (int1 % modulusBy == remainder && int2 % modulusBy == remainder && int3 % modulusBy == remainder && int4 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("All Values are modulus", int1, int2, int3, int4, int5)
+   // }
+   // else if (int1 % modulusBy == remainder && int2 % modulusBy == remainder && int3 % modulusBy == remainder && int4 % modulusBy == remainder) {
+   //    console.log("First 4 Values are modulus", int1, int2, int3, int4)
+   // }
+   // else if (int1 % modulusBy == remainder && int2 % modulusBy == remainder && int3 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 1 Int 2 Int 3 Int 5", int1, int2, int3, int5)
+   // }
+   // else if (int2 % modulusBy == remainder && int3 % modulusBy == remainder && int4 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log(" Last 4 Values are modulus", int2, int3, int4, int5)
+   // }
+   // else if (int1 % modulusBy == remainder && int2 % modulusBy == remainder && int3 % modulusBy == remainder) {
+   //    console.log("First 3 Values are modulus", int1, int2, int3)
+   // }
+   // else if (int1 % modulusBy == remainder && int4 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 1 Int 4 Int 5", int1, int4, int5)
+   // }
+   // else if (int1 % modulusBy == remainder && int3 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 1 Int 3 Int 5", int1, int3, int5)
+   // }
+   // else if (int1 % modulusBy == remainder && int2 % modulusBy == remainder && int4 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 1 Int 2 Int 4", int1, int2, int4)
+   // }
+   // else if (int1 % modulusBy == remainder && int2 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 1 Int 2 Int 5", int1, int2, int5)
+   // }
+   // else if (int1 % modulusBy == remainder && int3 % modulusBy == remainder && int4 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 1 Int 3 Int 4", int1, int3, int4)
+   // }
+   // else if (int2 % modulusBy == remainder && int3 % modulusBy == remainder && int4 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 2 Int 3 Int 4", int2, int3, int4)
+   // }
+   // else if (int2 % modulusBy == remainder && int4 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 2 Int 4 Int 5", int2, int4, int5)
+   // }
+   // else if (int3 % modulusBy == remainder && int4 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Values are modulus Int 3 Int 4 Int 5", int3, int4, int5)
+   // }
+   // else if (int1 % modulusBy == remainder && int2 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 1 Int 2", int1, int2)
+   // }
+   // else if (int1 % modulusBy == remainder && int3 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 1 Int 3", int1, int3)
+   // }
+   // else if (int1 % modulusBy == remainder && int4 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 1 Int 4", int1, int4)
+   // }
+   // else if (int1 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 1 Int 5", int1, int5)
+   // }
+   // else if (int2 % modulusBy == remainder && int3 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 2 Int 3", int2, int3)
+   // }
+   // else if (int2 % modulusBy == remainder && int4 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 2 Int 4", int2, int4)
+   // }
+   // else if (int2 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 2 Int 5", int2, int5)
+   // }
+   // else if (int3 % modulusBy == remainder && int4 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 3 Int 4", int3, int4)
+   // }
+   // else if (int3 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 3 Int 5", int3, int5)
+   // }
+   // else if (int4 % modulusBy == remainder && int5 % modulusBy == remainder) {
+   //    console.log("These Two Values are modulus Int 4 Int 5", int4, int5)
+   // }
+   // else if (int1 % modulusBy == remainder) {
+   //    console.log("These is a modulus Int1", int1);
+   // }
+   // else if (int2 % modulusBy == remainder) {
+   //    console.log("These is a modulus Int2", int2);
+   // }
+   // else if (int3 % modulusBy == remainder) {
+   //    console.log("These is a modulus Int3", int3);
+   // }
+   // else if (int4 % modulusBy == remainder) {
+   //    console.log("These is a modulus Int4", int4);
+   // }
+   // else if (int5 % modulusBy == remainder) {
+   //    console.log("These is a modulus Int5", int5);
+   // }
+   // else {
+   //    console.log("No values are Modulus")
+   // }
+   // // ======================================================================
+
+   // // ================================Equel====================================
+
+
+   // if (int1 == int2 && int2 == int3 && int3 == int4 && int4 == int5) {
+   //    console.log("All Values are equels", int1, int2, int3, int4, int5)
+   // }
+   // else if (int1 == int2 && int2 == int3 && int3 == int4) {
+   //    console.log("First 4 Values are equels", int1, int2, int3, int4)
+   // }
+   // else if (int1 == int2 && int2 == int3 && int3 == int5) {
+   //    console.log("These Values are equels Int 1 Int 2 Int 3 Int 5", int1, int2, int3, int5)
+   // }
+   // else if (int1 == int2 && int2 == int3 && int4 == int5) {
+   //    console.log(" Last 4 Values are equels", int1, int2, int4, int5)
+   // }
+   // else if (int1 == int2 && int2 == int3) {
+   //    console.log("First 3 Values are equels", int1, int2, int3)
+   // }
+   // else if (int1 == int4 && int4 == int5) {
+   //    console.log("These Values are equels Int 1 Int 4 Int 5", int1, int4, int5)
+   // }
+   // else if (int1 == int3 && int3 == int5) {
+   //    console.log("These Values are equels Int 1 Int 3 Int 5", int1, int3, int5)
+   // }
+   // else if (int2 == int3 && int3 == int4) {
+   //    console.log("These Values are equels Int 2 Int 3 Int 4", int1, int2, int4)
+   // }
+   // else if (int2 == int4 && int4 == int5) {
+   //    console.log("These Values are equels Int 2 Int 4 Int 5", int1, int2, int5)
+   // }
+   // else if (int2 == int1 && int1 == int4) {
+   //    console.log("These Values are equels Int 2 Int 1 Int 4", int1, int3, int4)
+   // }
+   // else if (int1 == int2 && int2 == int5) {
+   //    console.log("These Values are equels Int 1 Int 2 Int 5", int2, int3, int4)
+   // }
+   // else if (int2 == int3 && int3 == int5) {
+   //    console.log("These Values are equels Int 2 Int 3 Int 5", int2, int4, int5)
+   // }
+   // else if (int3 == int4 && int4 == int5) {
+   //    console.log("These Values are equel Int 2 Int 4 Int 5", int3, int4, int5)
+   // }
+   // else if (int1 == int2) {
+   //    console.log("These Two Values are equels Int 1 Int 2", int1, int2)
+   // }
+   // else if (int1 == int3) {
+   //    console.log("These Two Values are equels Int 1 Int 3", int1, int3)
+   // }
+   // else if (int1 == int4) {
+   //    console.log("These Two Values are equels Int 1 Int 4", int1, int4)
+   // }
+   // else if (int1 == int5) {
+   //    console.log("These Two Values are equels Int 1 Int 5", int1, int5)
+   // }
+   // else if (int2 == int3) {
+   //    console.log("These Two Values are equels Int 2 Int 3", int2, int3)
+   // }
+   // else if (int2 == int4) {
+   //    console.log("These Two Values are equels Int 2 Int 4", int2, int4)
+   // }
+   // else if (int2 == int5) {
+   //    console.log("These Two Values are equels Int 2 Int 5", int2, int5)
+   // }
+   // else if (int3 == int4) {
+   //    console.log("These Two Values are equels Int 3 Int 4", int3, int4)
+   // }
+   // else if (int3 == int5) {
+   //    console.log("These Two Values are equels Int 3 Int 5", int3, int5)
+   // }
+   // else if (int4 == int5) {
+   //    console.log("These Two Values are equels Int 4 Int 5", int4, int5)
+   // }
+
+   // else {
+   //    console.log("No values are equels")
+   // }
+   // // ================================================================================
+</script>
+
+</html>
